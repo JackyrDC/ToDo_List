@@ -2,7 +2,7 @@
     <li class="container" style="list-style-type: none; padding-left: 0;">
       <div class="rounded-pill" :class="{'bg-success': task.completed, 'bg-danger': !task.completed}">
         <span>{{ task.text }}</span>
-        <button clas="btn btn-dark" @click="removeTask">Eliminar</button>
+        <button @click="removeTask">Eliminar</button>
       </div>
       <div>
         <input type="checkbox" v-model="task.completed" />
