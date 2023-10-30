@@ -2,14 +2,12 @@
     <li class="container" style="list-style-type: none; padding-left: 10px;">
       <section class="rounded-pill container-fluid" :class="{'bg-success': task.completed, 'bg-danger': !task.completed}">
           <div class="row">
-            <span class="col-3 col-sm-6 m-3">{{ task.text }}</span>
-            <button @click="removeTask" class="btn btn-outline-dark col-4 col-sm-3 m-3">Eliminar</button>
+            <span class="col-3 col-sm-6 ml-3 mr-3 mt-3">{{ task.text }}</span>
+            <button @click="removeTask" class="btn btn-outline-dark col-4 col-sm-3">Eliminar</button>
           </div>
           <div class="row">
-            <div class="col-3 col-sm-4 m-4">
-                <input type="checkbox" v-model="task.completed" />
-                <span :class="{'text-success': task.completed, 'text-danger': !task.completed}">{{ task.completed ? 'Realizada' : 'Pendiente' }}</span>
-            </div>
+            <input type="checkbox" class="ml-3 mt-1" v-model="task.completed" />
+            <span class="mt-1 ml-1" :class="{'text-success': task.completed, 'text-danger': !task.completed}">{{ task.completed ? 'Realizada' : 'Pendiente' }}</span>
       </div>
       </section>
 
