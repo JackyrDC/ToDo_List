@@ -7,8 +7,8 @@
           </div>
           <div class="row">
             <input type="checkbox" class="ml-3 mt-1" v-model="task.completed" />
-            <span class="mt-1 ml-1" :class="{'text-success': task.completed, 'text-danger': !task.completed}">{{ task.completed ? 'Realizada' : 'Pendiente' }}</span>
-      </div>
+            <span class="mt-1 ml-1">{{ task.completed ? 'Realizada' : 'Pendiente' }}</span>
+          </div>
       </section>
 
     </li>
