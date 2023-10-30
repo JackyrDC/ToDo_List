@@ -5,12 +5,11 @@
             <span class="col-3 col-sm-4 ml-3 mr-3 mt-3">{{ task.text }}</span>
             <button @click="removeTask" class="btn btn-outline-dark col-3 col-sm-3">Eliminar</button>
           </div>
-          <div class="row">
+      </section>
+          <div class="container">
             <input type="checkbox" class="ml-3 mt-1" v-model="task.completed" />
             <span>{{ task.completed ? 'Realizada' : 'Pendiente' }}</span>
           </div>
-      </section>
-
     </li>
   </template>
   
