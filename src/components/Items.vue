@@ -1,5 +1,5 @@
 <template>
-    <li class="container" style="list-style-type: none; padding-left: 10px;">
+    <li style="list-style-type: none; padding-left: 10px;">
       <section class="rounded-pill container-fluid" :class="{'bg-success': task.completed, 'bg-danger': !task.completed}">
           <div class="row">
             <span class="col-3 col-sm-6 ml-3 mr-3 mt-3">{{ task.text }}</span>
