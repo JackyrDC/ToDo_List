@@ -3,7 +3,7 @@
       <section class="rounded-pill container-fluid" :class="{'bg-success': task.completed, 'bg-danger': !task.completed}">
           <div class="row p-3">
             <span class="col-3 col-sm-4 ml-3 mr-3 mt-3 mb-3">{{ task.text }}</span>
-            <div class="col-4 col-sm-2"></div>  
+            <div class="col-4 col-sm-4"></div>  
             <button @click="removeTask" class="btn btn-outline-dark col-3 col-sm-3 mt-3 mb-3">Eliminar</button>
           </div>
       </section>
