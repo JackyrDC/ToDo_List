@@ -16,7 +16,7 @@
     <div>
       <!--Cuadro de texto que llevará la descripción de las nueva tareas.Permite añadirlas al presionar "enter"-->
       <input v-model="newTask" @keyup.enter="addTaskOnEnter" />
-      <button class="btn btn-light" @click="addTask">Agregar Tarea</button>
+      <button class="btn btn-light" @click="addTask">Añadir Tarea</button>
     </div>
   </div>
 </template>
